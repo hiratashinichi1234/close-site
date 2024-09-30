@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 200px; /* 適度な長さに調整 */
+    margin: 0 20px;
+    padding: 5px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 15px; /* アイコン同士の距離を調整 */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* 初期は非表示 */
+    width: 250px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar h3 {
+    margin: 20px 0 5px;
+}
+
+.sidebar p {
+    margin: 0 0 20px;
+}
+
+
+main {
+    margin: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 1320px; /* 余裕を持たせた幅 */
+    height: 320px; /* 高さも同じに */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-image {
+    width: 300px; /* 固定幅 */
+    height: 300px; /* 固定高さ */
+    margin-right: 10px; /* 画像同士の間隔 */
+    object-fit: cover; /* 画像のアスペクト比を維持しながらトリミング */
+}
+
+.slide-image:last-child {
+    margin-right: 0; /* 最後の画像にはマージンを適用しない */
+}
+
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.container {
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* セクション間のスペースを均等に */
+    margin: 20px; /* 外側のマージン */
+}
+
+.item-section {
+    flex: 1; /* 同じ幅で配置する */
+    margin: 0 10px; /* セクション間の間隔 */
+    border: 2px solid #ccc; /* 枠のスタイル */
+    padding: 10px; /* 内側のパディング */
+    border-radius: 5px; /* 角を丸める */
+}
+
+.promotion-banner {
+    background-color: rgba(255, 140, 0, 0.9); /* 明るいオレンジ色 */
+    padding: 20px;
+    text-align: center;
+}
+
+.promotion-banner2 {
+    background: rgb(240,159,37);
+    background: linear-gradient(90deg, rgba(240,159,37,1) 14%, rgba(255,216,57,0.8239670868347339) 48%);
+    padding: 20px;
+    text-align: center;
+}
+
+.promotion-banner h2 {
+    color: white;
+    font-size: 24px; /* 大きな文字 */
+}
+.promotion-banner2 h2 {
+    color: white;
+    font-size: 24px; /* 大きな文字 */
+    font-weight: bold;
+}
+
+.offer-text {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 中央揃え */
+    margin: 20px 0;
+}
+
+.offer-text p {
+    color: rgba(200, 200, 200, 1); /* 薄い明るいグレー */
+    margin-right: 10px; /* テキストとボタンの間隔 */
+}
+
+.offer-text h3 {
+    font-weight: bold;
+    color: black; /* 太字 */
+    margin: 0 10px; /* テキストとボタンの間隔 */
+}
+
+.view-all {
+    margin-left: 12.5rem;
+    background-color: blue; /* 青色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-cards {
+    margin-top: 3rem;
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* カード間のスペースを均等に */
+}
+
+.card {
+    width: 100px; /* カードの幅 */
+    text-align: center; /* 中央揃え */
+    gap: 40px;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card h4 {
+    font-size: 16px; /* 商品名のサイズ */
+    margin: 5px 0; /* 上下のマージン */
+}
+
+.card p {
+    margin: 3px 0; /* 説明と価格の間隔 */
+}
+
+/* 最後のカードのマージンを消す */
+.product-cards .card:last-child {
+    margin-right: 0;
+}
+
+
+.news-section {
+    display: flex;
+    align-items: center; /* 画像を中央に配置 */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-title {
+    width: 50%;
+    margin-right: 20px; /* タイトルとニュース項目の間隔 */
+}
+
+.news-title h2 {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-size: 24px;
+    margin-bottom: 10px; /* タイトル下の余白 */
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.news-items {
+    margin-top: 5rem; /* ニュース項目の上部余白を調整 */
+    margin-left: 5rem;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.news-item .news-date {
+    font-weight: bold;
+}
+
+.item-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.news-image {
+    margin-top: 5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* 高さを固定して中央に配置 */
+}
+
+.news-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 5rem;
+    background-color: #f0f0f0;
+    height: 250px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0; /* 上下の余白 */
+    margin-top: 0.5rem;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px; /* 左右の余白 */
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333; /* リンクの色 */
+}
+
+.footer-column a:hover {
+    color: #dcf793;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.footer-copyright {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.footer-copyright p {
+    margin: 0; /* マージンをリセット */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* アイコンを中央に配置 */
+    margin-top: 10px;
+    gap: 20px;
+}
+
+
+
+
+

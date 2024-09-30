@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOZO Close</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="title">ZOZO Close</div>
+        <input type="text"  placeholder="すべてのアイテムを探す" class="search-bar">
+        <nav class="nav-icons">
+            <a href="#">ログイン</a>
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <h3>アイテムを探す</h3>
+        <p>カテゴリからアイテムを見つけましょう。</p>
+        <h3>ランキング</h3>
+        <p>人気アイテムのランキングです。</p>
+        <h3>ニュース</h3>
+        <p>最新の情報をお届けします。</p>
+        <h3>ヘルプ</h3>
+        <p>よくある質問やサポート情報です。</p>
+        <h3>お問い合わせ</h3>
+        <p>お気軽にお問い合わせください。</p>
+    </div>
+
+    <main>
+        <div class="categories">
+            <div class="category">
+                <span><i class="fas fa-user"></i></span>
+                <p>メンズ</p>
+            </div>
+            <div class="category">
+                <span><i class="fas fa-user-alt"></i></span>
+                <p>レディース</p>
+            </div>
+            <div class="category">
+                <span><i class="fas fa-child"></i></span>
+                <p>キッズ</p>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slide" id="slide-container">
+                <img src="image/image1.jpg" alt="Image 1" class="slide-image">
+                <img src="image/image2.jpg" alt="Image 2" class="slide-image">
+                <img src="image/image3.jpg" alt="Image 3" class="slide-image">
+                <img src="image/image4.jpg" alt="Image 4" class="slide-image">
+                <img src="image/image5.jpg" alt="Image 5" class="slide-image">
+                <img src="image/image6.jpg" alt="Image 5" class="slide-image">
+            </div>
+            <button class="arrow left" id="prev">&#10094;</button>
+            <button class="arrow right" id="next">&#10095;</button>
+        </div>
+
+        <div class="dots" id="dot-container">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+    </main>
+
+    <div class="container">
+        <section class="item-section">
+            <div class="promotion-banner">
+                <h2>今なら新規登録の方は送料無料！</h2>
+            </div>
+            <div class="offer-text">
+                <p>お得にゲットしよう</p>
+            </div>
+            <h3 style="display: inline;">半額以下の商品紹介</h3>
+            <button class="view-all">すべてみる</button>
+            <div class="product-cards">
+                <div class="card">
+                    <img src="image/anomaly-WWesmHEgXDs-unsplash.jpg" alt="商品1">
+                    <h4>トップス</h4>
+                    <p>秋のコーディネート</p>
+                    <p>価格: ¥1000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/hugo-clement-JGtPrdnMgQc-unsplash.jpg" alt="商品2">
+                    <h4>ジャケット</h4>
+                    <p>寒くなる季節に</p>
+                    <p>価格: ¥2000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/christian-bolt-VW5VjskNXZ8-unsplash.jpg" alt="商品3">
+                    <h4>パーカー</h4>
+                    <p>秋物用に一枚</p>
+                    <p>価格: ¥3000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/jackets-428622_1280.jpg" alt="商品4">
+                    <h4>ブルゾン</h4>
+                    <p>男女兼用に</p>
+                    <p>価格: ¥4000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/tamara-bellis-AreMq4SKhPA-unsplash.jpg" alt="商品5">
+                    <h4>スカート</h4>
+                    <p>豊富なラインナップ</p>
+                    <p>価格: ¥1500</p>
+                    <p>全3色</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="item-section">
+            <div class="promotion-banner">
+                <h2>クーポン対象の人気アイテム</h2>
+            </div>
+            <div class="offer-text">
+                <p>クーポンでお得にGETしよう。</p>
+            </div>
+            <h3 style="display: inline;">クーポンで手に入る商品紹介</h3>
+            <button class="view-all">すべてみる</button>
+            <div class="product-cards">
+                <div class="card">
+                    <img src="image/image3.jpg" alt="商品1">
+                    <h4>デニムシャツ</h4>
+                    <p>色とりどりあります</p>
+                    <p>価格: ¥1000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/image1.jpg" alt="商品2">
+                    <h4>デニムパンツ</h4>
+                    <p>豊富な種類があります</p>
+                    <p>価格: ¥2000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/christian-bolt-VW5VjskNXZ8-unsplash.jpg" alt="商品3">
+                    <h4>パーカー</h4>
+                    <p>春・秋物に</p>
+                    <p>価格: ¥2000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/heber-barahona-yLYn1w6dMtA-unsplash.jpg" alt="商品4">
+                    <h4>ワンピース</h4>
+                    <p>新作増えております。</p>
+                    <p>価格: ¥2000</p>
+                    <p>全3色</p>
+                </div>
+                <div class="card">
+                    <img src="image/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg" alt="商品5">
+                    <h4>シャツ</h4>
+                    <p>どのコーデにもOK</p>
+                    <p>価格: ¥1000</p>
+                    <p>全3色</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="item-section">
+        <div class="promotion-banner2">
+            <h2>コーディネートランキング</h2>
+        </div>
+        <div class="product-cards">
+            <div class="card">
+                <img src="image/image4.jpg" alt="商品1">
+                <h4>1位</h4>
+                <p>Yuzuru</p>
+            </div>
+            <div class="card">
+                <img src="image/image5.jpg" alt="商品2">
+                <h4>2位</h4>
+                <p>kana</p>
+            </div>
+            <div class="card">
+                <img src="image/image6.jpg" alt="商品3">
+                <h4>3位</h4>
+                <p>ryou</p>
+            </div>
+            <div class="card">
+                <img src="image/christian-bolt-VW5VjskNXZ8-unsplash.jpg" alt="商品4">
+                <h4>4位</h4>
+                <p>rian</p>
+            </div>
+            <div class="card">
+                <img src="image/heber-barahona-yLYn1w6dMtA-unsplash.jpg" alt="商品5">
+                <h4>5位</h4>
+                <p>kayo</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="news-title">
+        <h2>News</h2>
+    </div>
+    <div class="news-section">
+    
+        <div class="news-items">
+            <div class="news-item">
+                <span class="news-date">2024年9月15日</span>
+                <p>新作秋冬コレクションが入荷しました！おしゃれなアイテムをチェック！</p>
+                <hr class="item-divider">
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024年8月30日</span>
+                <p>夏のセールが好評開催中。最大50%オフのチャンスをお見逃しなく！</p>
+                <hr class="item-divider">
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024年7月10日</span>
+                <p>オンラインストアがリニューアルしました。新しいデザインをお楽しみください！</p>
+                <hr class="item-divider">
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024年6月20日</span>
+                <p>人気のデザイナーとのコラボレーション商品を発売しました。</p>
+                <hr class="item-divider">
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024年5月5日</span>
+                <p>母の日特集！特別なギフトセットをご用意しています。</p>
+                <hr class="item-divider">
+            </div>
+        </div>
+        <div class="news-image">
+            <img src="./image/hugo-clement-JGtPrdnMgQc-unsplash.jpg" alt="ニュース画像" width="350" height="350">
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>カテゴリー一覧</h3>
+                    <ul>
+                        <li><a href="#">ブランド一覧</a></li>
+                        <li><a href="#">公式ショップ一覧</a></li>
+                        <li><a href="#">ランキング一覧</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>こだわり検索</h3>
+                    <ul>
+                        <li><a href="#">コーディネート一覧</a></li>
+                        <li><a href="#">ショップニュース一覧</a></li>
+                        <li><a href="#">ファッションまとめ一覧</a></li>
+                    </ul>
+                  
+                </div>
+                <div class="footer-column">
+                    <h3>ヘルプ</h3>
+                    <ul>
+                        <li><a href="#">はじめての方へ</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                        <li><a href="#">公式アプリ</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">公式SNS</a></li>
+                    </ul>
+                    <div class="social-icons"></div>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-copyright">
+                <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
